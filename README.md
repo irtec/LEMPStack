@@ -15,10 +15,8 @@ sudo mysql_secure_installation</pre>
 sudo nano /etc/php5/fpm/php.ini</pre>
 Cari text cgi.fix_pathinfo dan rubah menjadi cgi.fix_pathinfo=0
 <pre>sudo service php5-fpm restart</pre>
-</br>
 <h2>4. Configure Nginx to Use our PHP Processor</h2>
 <pre>sudo nano /etc/nginx/sites-available/default</pre>
-  
 <pre>
 server {
     listen 80 default_server;
