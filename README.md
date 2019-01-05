@@ -49,15 +49,17 @@ server {
 </pre>
 <p><pre>sudo service nginx restart</pre>
 <h2>5. Install phpMyAdmin</h2>
-sudo apt-get install phpmyadmin
+<pre>sudo apt-get install phpmyadmin
 sudo ln -s /usr/share/phpmyadmin /usr/share/nginx/html
 sudo php5enmod mcrypt
-sudo service php5-fpm restart
-http://server_domain_or_IP/phpmyadmin
+sudo service php5-fpm restart</pre>
+Test
+<pre>http://server_domain_or_IP/phpmyadmin</pre>
 
 <h2>6. Secure your phpMyAdmin Instance</h2>
 Changing the Application's Access Location
-cd /usr/share/nginx/html
+<pre>cd /usr/share/nginx/html
 sudo mv phpmyadmin nothingtosee
-ls -l
-http://server_domain_or_IP/nothingtosee
+ls -l</pre>
+Test
+<pre>http://server_domain_or_IP/nothingtosee</pre>
