@@ -2,22 +2,22 @@
 Ubuntu 14.04
 </br>
 <h2>1. Install the Nginx Web Server</h2>
-<p><pre>sudo apt-get update
-<p>sudo apt-get install nginx</pre>
+<pre>sudo apt-get update
+sudo apt-get install nginx</pre>
 Test webserver pada browser
 <p><pre>http://server_domain_name_or_IP</pre>
 <h2>2. Install MySQL to Manage Site Data</h2>
-<p><pre>sudo apt-get install mysql-server
+<pre>sudo apt-get install mysql-server
 sudo mysql_install_db
 sudo mysql_secure_installation</pre>
 <h2>3. Install PHP for Processing</h2>
-<p><pre>sudo apt-get install php5-fpm php5-mysql
-<p>sudo nano /etc/php5/fpm/php.ini</pre>
-<p>Cari text cgi.fix_pathinfo dan rubah menjadi cgi.fix_pathinfo=0
-<p><pre>sudo service php5-fpm restart</pre>
+<pre>sudo apt-get install php5-fpm php5-mysql
+sudo nano /etc/php5/fpm/php.ini</pre>
+Cari text cgi.fix_pathinfo dan rubah menjadi cgi.fix_pathinfo=0
+<pre>sudo service php5-fpm restart</pre>
 </br>
 <h2>4. Configure Nginx to Use our PHP Processor</h2>
-<p>sudo nano /etc/nginx/sites-available/default
+<pre>sudo nano /etc/nginx/sites-available/default</pre>
   
 <pre>
 server {
