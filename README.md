@@ -18,8 +18,8 @@ Ubuntu 14.04
 <p>sudo service php5-fpm restart
 </br>
 <h2>4. Configure Nginx to Use our PHP Processor</h2>
-</br>
 <p>sudo nano /etc/nginx/sites-available/default
+  
 server {
     listen 80 default_server;
     listen [::]:80 default_server ipv6only=on;
@@ -48,11 +48,5 @@ server {
         include fastcgi_params;
     }
 }
+
 <p>sudo service nginx restart
-<h2>5. Create a PHP File to Test Configuration</h2>
-<p>sudo nano /usr/share/nginx/html/info.php
-<p><?php
-phpinfo();
-?>
-</br>
-<p>http://server_domain_name_or_IP/info.php
