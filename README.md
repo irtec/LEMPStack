@@ -8,8 +8,8 @@ Test webserver pada browser
 <p><pre>http://server_domain_name_or_IP</pre>
 <h2>2. Install MySQL to Manage Site Data</h2>
 <p><pre>sudo apt-get install mysql-server
-<p>sudo mysql_install_db
-<p>sudo mysql_secure_installation</pre>
+sudo mysql_install_db
+sudo mysql_secure_installation</pre>
 <h2>3. Install PHP for Processing</h2>
 <p><pre>sudo apt-get install php5-fpm php5-mysql
 <p>sudo nano /etc/php5/fpm/php.ini</pre>
