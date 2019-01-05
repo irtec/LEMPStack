@@ -4,13 +4,12 @@ Ubuntu 14.04
 <h2>1. Install the Nginx Web Server</h2>
 <p><pre>sudo apt-get update
 <p>sudo apt-get install nginx</pre>
-<p>Test webserver pada browser
+Test webserver pada browser
 <p><pre>http://server_domain_name_or_IP</pre>
 <h2>2. Install MySQL to Manage Site Data</h2>
 <p><pre>sudo apt-get install mysql-server
 <p>sudo mysql_install_db
 <p>sudo mysql_secure_installation</pre>
-</br>
 <h2>3. Install PHP for Processing</h2>
 <p><pre>sudo apt-get install php5-fpm php5-mysql
 <p>sudo nano /etc/php5/fpm/php.ini</pre>
@@ -50,5 +49,4 @@ server {
     <span class="highlight">}</span>
 }
 </pre>
-
-<p>sudo service nginx restart
+<p><pre>sudo service nginx restart</pre>
