@@ -4,10 +4,8 @@ Ubuntu 14.04
 <h2>1. Install the Nginx Web Server</h2>
 <p>sudo apt-get update
 <p>sudo apt-get install nginx
-<p></br>  
 <p>Try one of the lines that you receive in your web browser. It should take you to Nginx's default landing page:
 <p>http://server_domain_name_or_IP
-  </br>
 <h2>2. Install MySQL to Manage Site Data</h2>
 <p>sudo apt-get install mysql-server
 <p>sudo mysql_install_db
