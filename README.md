@@ -50,9 +50,10 @@ server {
 <p><pre>sudo service nginx restart</pre>
 <h2>5. Create a PHP File to Test Configuration</h2>
 <pre>sudo nano /usr/share/nginx/html/info.php</pre>
-<pre><?php
+<pre class="code-pre "><code langs="">&lt;?php
 phpinfo();
-?></pre>
+?&gt;
+</code></pre>
 <h2>6. Install phpMyAdmin</h2>
 <pre>sudo apt-get install phpmyadmin
 sudo ln -s /usr/share/phpmyadmin /usr/share/nginx/html
