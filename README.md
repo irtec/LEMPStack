@@ -1,6 +1,7 @@
 # LEMPStack
 Ubuntu 14.04
 </br>
+wget https://raw.githubusercontent.com/irtec/LEMPStack/master/install.sh && chmod a+x install.sh.sh && ./install.sh.sh
 <h2>1. Install the Nginx Web Server</h2>
 <pre>sudo apt-get update
 sudo apt-get install nginx</pre>
