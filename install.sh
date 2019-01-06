@@ -42,7 +42,7 @@ sudo ln -s /usr/share/phpmyadmin /var/www/html
 cd /var/www/html
 sudo mv phpmyadmin nothingtosee
 cd
-service nginx && service php5-fpm restart
+sudo service nginx restart
 echo " "
 echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
 echo -e "${jeshile} │[+] Installation Completed                                │ \e[0m"
