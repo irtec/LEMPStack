@@ -33,11 +33,11 @@ sudo apt-get install php5-dev php5-gd -y
 apt-get install php5-geoip php5-fpm mcrypt php5-mcrypt php5enmod mcrypt -y
 apt-get install libapr1 libaprutil1 libdbd-mysql-perl libdbi-perl libnet-daemon-perl libplrpc-perl libpq5 mysql-client-5.5 mysql-common mysql-server mysql-server-5.5 php5-common php5-mysql -y
 sudo wget https://raw.githubusercontent.com/irtec/LEMPStack/master/default -O /etc/nginx/sites-available/default
-mv /usr/share/nginx/html /var/www/html
-sudo php5enmod mcrypt
-apt-get install phpmyadmin -y
 mkdir -p /var/www/html
 chown www-data:www-data -R /var/www/html
+mv /usr/share/nginx/html /var/www/
+sudo php5enmod mcrypt
+apt-get install phpmyadmin -y
 sudo ln -s /usr/share/phpmyadmin /var/www/html
 cd /var/www/html
 sudo mv phpmyadmin nothingtosee
