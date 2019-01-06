@@ -42,7 +42,6 @@ sudo ln -s /usr/share/phpmyadmin /var/www/html
 cd /var/www/html
 sudo mv phpmyadmin nothingtosee
 cd
-sudo service nginx restart
 echo " "
 echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
 echo -e "${jeshile} │[+]           Installation Completed                      │ \e[0m"
@@ -56,4 +55,8 @@ echo -e "${jeshile} └───────────────────
 echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
 echo -e "${jeshile} │[+]                 www.tvri.pro                          │ \e[0m"
 echo -e "${jeshile} └──────────────────────────────────────────────────────────┘ \e[0m"
+echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
+echo -e "${jeshile} │[+]              Web Server restart                       │ \e[0m"
+echo -e "${jeshile} └──────────────────────────────────────────────────────────┘ \e[0m"
 sleep 8
+sudo service nginx restart
